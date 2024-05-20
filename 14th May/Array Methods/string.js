@@ -46,4 +46,35 @@ console.log(result6);
 let result7=help1.toUpperCase();
 console.log(result7);
 
-//
+//8.str concat()
+let x="Bangalore";
+let y="Mumbaii";
+let z=x.concat(y);
+console.log("Display z:",z);
+let z1=y.concat(x);
+console.log("Display z1:",z1);
+
+//9.str trim()-Removes the whiteSpace
+let textX="   Hello,world!";
+let textY=textX.trim();
+console.log(textY);
+
+//10.trimStart() and trimEnd()
+let x2=" Hello,world";
+let y2=x2.trimStart();
+console.log("Display y2:",y2);
+let x3="Helloworld!  ";
+let y3=x3.trimEnd();
+console.log("Display y3:",y3);
+
+//padStart() and padEnd()
+let numb = 5;
+let text5 = numb.toString();
+let padded = text5.padStart(4,"0");
+console.log("padStart of function:",padded);
+
+//repeat()
+let number="number is important";
+console.log("Entered Number:",number);
+let number1=number.repeat(2);
+console.log("repeatation:",number1);
