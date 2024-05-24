@@ -1,5 +1,5 @@
 import React from "react";
-
+//1.constructor() and render()
 class App3 extends React.Component {
     constructor(props) {
         super(props); // Call super(props) as the first statement

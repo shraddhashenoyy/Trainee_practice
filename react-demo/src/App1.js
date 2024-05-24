@@ -1,5 +1,6 @@
 //Components
 //1.class components(Example-1)
+//render()
 import React from "react";
 
 class App1 extends React.Component{

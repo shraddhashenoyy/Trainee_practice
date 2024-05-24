@@ -4,18 +4,20 @@ import './index.css';
 import Application from './App';
 import App1 from './App1';
 import App2 from './App2';
-import App4 from './App4';
+import App3 from './App3';
+import Child from './Unmount';
 
 
 // import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <Application/>
+     <Application/>
     <App1/>
-    <App2/>
-    <App4/>
+     <App2/>
+     <App3/>
+     <Child/>
   </React.StrictMode>
 );
 
