@@ -1,16 +1,29 @@
-//1.constructor() and render()
 import React from "react";
+import ReactDOM from "react-dom/client";
 
-class App2 extends React.component(){
-constructor(props){
-  super(props);
-  this.state={city:"red"};
+// if-statement
+function MyFirst(){
+    return<h1>Hello!</h1>;
 }
-render(){
-  return(
-    <h1>I'm leaving in {this.state.city} </h1>
-  );
- }
+  
+function MySecond(){
+    return <h2>Hii,how are you???</h2>;
+}
+  
+function App2(props){
+    const myResult=props.myResult;
+    if(myResult){
+      return <MySecond/>;
+    }else{
+    return<MyFirst/>;
+    }
 }
 
-export default App2;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <>
+    <myFunction myResult={false}/>
+    </>
+   
+);
+ export default App2;
