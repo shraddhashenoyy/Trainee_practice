@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Form from "./Form";
+import Third from "./Third";
 
 
 function App(){
     return(
         <div>
-            <Form/>
+            <Third/>
         </div>
 );
 }
