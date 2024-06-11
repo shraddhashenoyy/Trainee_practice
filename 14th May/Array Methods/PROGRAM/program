@@ -1,0 +1,24 @@
+let str="The quick brown fox jumps over the lazy dog";
+console.log("Entered string:",str);
+console.log("Length of String:",str.length);
+
+function occurence(str,newStr){
+    let final="";
+    let flag=false;
+
+    for(let i=0;i<str.length;i++){
+        if (str.substr(i,newStr.length) === newStr && !flag) {
+            flag = true; 
+            i += newStr.length - 1;
+    }else {
+        
+        final += str[i];
+   } 
+}
+    return final;
+
+}
+
+let newStr="over";
+let result=occurence(str,newStr);
+console.log("Result:",result);
